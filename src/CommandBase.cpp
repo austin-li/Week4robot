@@ -10,8 +10,9 @@ std::unique_ptr<ExampleSubsystem> CommandBase::exampleSubsystem =
 		std::make_unique<ExampleSubsystem>();
 
 std::unique_ptr<OI> CommandBase::oi = std::make_unique<OI>();
+subby CommandBase::Subby = nullptr;
 
 CommandBase::CommandBase(const std::string &name) :
 		frc::Command(name) {
-
+	Subby = new subby();
 }

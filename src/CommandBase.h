@@ -8,6 +8,7 @@
 
 #include "OI.h"
 #include "Subsystems/ExampleSubsystem.h"
+#include "Subsystems/subby.h"
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -23,6 +24,7 @@ public:
 	// Create a single static instance of all of your subsystems
 	static std::unique_ptr<ExampleSubsystem> exampleSubsystem;
 	static std::unique_ptr<OI> oi;
+	static subby* Subby;
 };
 
 #endif  // COMMAND_BASE_H
